@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(135deg, #072751 0%, #0a3d6b 50%, #072751 100%);
+}
+
+#contenedor-privacidad {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.tabs {
+    display: flex;
+    background: linear-gradient(135deg, #072751 0%, #0a3d6b 100%);
+    border-bottom: 3px solid #F5D547;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 20px 30px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tab-content h1 {
+    color: #072751;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #F5D547;
+    padding-bottom: 20px;
+}
+
+.fecha-actualizacion {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+.seccion-legal {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    border-left: 5px solid #F5D547;
+    transition: all 0.3s ease;
+}
+
+.seccion-legal:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-legal h2 {
+    color: #072751;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #F5D547;
+}
+
+.contenido-seccion {
+    color: #333;
+    line-height: 1.8;
+}
+
+.contenido-seccion p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+.contenido-seccion strong {
+    color: #072751;
+    font-weight: 700;
+}
+
+.contenido-seccion ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.contenido-seccion ul li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.contenido-seccion ul li strong {
+    min-width: 150px;
+}
+
+.contenido-seccion p:has(strong) {
+    background: rgba(245, 213, 71, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+

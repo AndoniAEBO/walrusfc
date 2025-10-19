@@ -1,0 +1,375 @@
+body {
+    margin: 0 auto;
+    background-color: #072751;
+}
+
+#fila1 a, #fila2 a {
+    display: block;
+    width: 25%;
+}
+
+h1 {
+    text-align: center;
+    color: #F5D547;
+    margin: 0 auto;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    padding: 40px 0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+h2 {
+    background: linear-gradient(90deg, #072751, #F5D547, #072751);
+    color: white;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+h3 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+#Todos {
+    padding: 40px 20px;
+    overflow: hidden;
+}
+
+#fila1, #fila2 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    gap: 15px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.plantillaimagen {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #F5D547;
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(245, 213, 71, 0.3);
+    transition: all 0.4s ease;
+}
+
+.plantillaimagen:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(245, 213, 71, 0.6);
+    border-color: white;
+}
+
+#Jugadores {
+    color: white;
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.par, .impar {
+    margin: 40px 20px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.par:hover, .impar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.impar {
+    background-color: #f0c832;
+    color: #072751;
+}
+
+.impar h3 {
+    background-color: #0a3d6b;
+    color: #F5D547;
+    border: 3px solid #F5D547;
+    border-radius: 20px;
+    padding: 20px 40px;
+    width: fit-content;
+    box-shadow: 0 5px 20px rgba(7, 39, 81, 0.4);
+    transition: all 0.3s ease;
+}
+
+.impar h3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(7, 39, 81, 0.6);
+}
+
+.par {
+    background-color: #0a3d6b;
+}
+
+.par h3 {
+    background-color: #f0c832;
+    color: #072751;
+    border: 3px solid #072751;
+    border-radius: 20px;
+    padding: 20px 40px;
+    width: fit-content;
+    box-shadow: 0 5px 20px rgba(245, 213, 71, 0.4);
+    transition: all 0.3s ease;
+}
+
+.par h3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(245, 213, 71, 0.6);
+}
+
+.impar p {
+    color: #072751;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.par p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+
+.imgjugador {
+    width: 450px;
+    min-width: 350px;
+    max-width: 100%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative; 
+}
+
+.imgjugador:hover {
+    transform: scale(1.2);
+    filter: brightness(1.15);
+}
+
+.informaciontotal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.informacion, .estadisticas, .meritos {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.esquema {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    min-width: 250px;
+    flex: 1;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.esquema:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.impar .esquema {
+    border-color: rgba(7, 39, 81, 0.3);
+}
+
+.par .esquema {
+    border-color: rgba(245, 213, 71, 0.3);
+}
+
+.esquema h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid currentColor;
+}
+
+.impar .esquema h4 {
+    color: #072751;
+}
+
+.par .esquema h4 {
+    color: #F5D547;
+}
+
+.esquema ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.esquema ul li {
+    padding: 10px 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.impar .esquema ul li {
+    color: #072751;
+}
+
+.par .esquema ul li {
+    color: white;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fila p {
+    background: rgba(255,255,255,0.1);
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    min-width: 120px;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.fila p:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+.tabla-estadisticas {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.tabla-estadisticas td {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.tabla-estadisticas td:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+.tabla-estadisticas tr {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.meritos .esquema p {
+    padding: 8px 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+    .imgjugador {
+        width: 350px;
+        min-width: 300px;
+    }
+    
+    .par, .impar {
+        padding: 30px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .par, .impar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .par {
+        flex-direction: column;
+    }
+    
+    .imgjugador {
+        width: 100%;
+        max-width: 400px;
+        min-width: auto;
+        margin: 0 auto;
+    }
+    
+    h3 {
+        margin: 0 auto;
+    }
+    
+    .informacion, .estadisticas, .meritos {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #fila1, #fila2 {
+        flex-wrap: wrap;
+    }
+    
+    .plantillaimagen {
+        width: calc(50% - 10px);
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
+#bronce{
+    color: #CD7F32;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #8B5A2B;
+}
+
+#plata{
+    color: #C0C0C0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #7D7D7D;
+}
+
+#oro{
+    color: #FFD700; /* oro */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #B8860B; /* sombra para dar profundidad */
+}
+

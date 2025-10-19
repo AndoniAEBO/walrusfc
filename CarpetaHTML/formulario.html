@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title> Walrus FC</title>
+        <link rel="stylesheet" href="../CarpetaCSS/header-footer.css">
+        <link rel="stylesheet" href="../CarpetaCSS/chatgpt.css">
+        <link rel="stylesheet" href="../CarpetaCSS/formulario.css">
+    </head>
+    <body>
+        <header>
+            <img src="../CarpetaIMG/walrus.jpg" id="walrus" alt="Logo del club Walrus FC">
+            <h1 id="walrustexto">WALRUS FC</h1>
+            <div id="menu-hamburguesa">
+                <div id="icono-menu" onclick="toggleMenu()">&#9776;</div> <!-- Esta linea es chatgpt-->
+                <ul id="menu-opciones">
+                    <li><a href="index.html">Inicio</a></li> 
+                    <li><a href="plantilla.html">Plantilla</a></li>
+                    <li><a href="formulario.html">Solicitar unirse</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="contenedor-formulario">
+            <h1>SOLICITUD DE INGRESO</h1>
+            <p class="subtitulo">Completa el formulario para unirte a Walrus FC</p>
+            
+            <form id="formulario-inscripcion">
+                <div class="seccion-form">
+                    <h2>Datos Personales</h2>
+                    
+                    <div class="grupo-input">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    </div>
+                    
+                    <div class="grupo-input">
+                        <label for="apellidos">Apellidos *</label>
+                        <input type="text" id="apellidos" name="apellidos" required placeholder="Tus apellidos">
+                    </div>
+                    
+                    <div class="grupo-doble">
+                        <div class="grupo-input">
+                            <label for="fecha-nacimiento">Fecha de Nacimiento *</label>
+                            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                        </div>
+                        
+                        <div class="grupo-input">
+                            <label for="lugar-nacimiento">Lugar de Nacimiento *</label>
+                            <input type="text" id="lugar-nacimiento" name="lugar-nacimiento" required placeholder="Ciudad, País">
+                        </div>
+                    </div>
+                    
+                    <div class="grupo-doble">
+                        <div class="grupo-input">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        
+                        <div class="grupo-input">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="+34 600 000 000">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seccion-form">
+                    <h2>Información Deportiva</h2>
+                    
+                    <div class="grupo-doble">
+                        <div class="grupo-input">
+                            <label for="posicion-principal">Posición Principal *</label>
+                            <select id="posicion-principal" name="posicion-principal" required>
+                                <option value="">Selecciona una posición</option>
+                                <option value="portero">Portero</option>
+                                <option value="defensa">Defensa</option>
+                                <option value="carrilero">Carrilero</option>
+                                <option value="mediocampista">Mediocampista</option>
+                                <option value="delantero">Delantero</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grupo-input">
+                            <label for="posicion-alternativa">Posición Alternativa</label>
+                            <select id="posicion-alternativa" name="posicion-alternativa">
+                                <option value="">Selecciona una posición</option>
+                                <option value="ninguna">Ninguna</option>
+                                <option value="portero">Portero</option>
+                                <option value="defensa">Defensa</option>
+                                <option value="carrilero">Carrilero</option>
+                                <option value="mediocampista">Mediocampista</option>
+                                <option value="delantero">Delantero</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="grupo-doble">
+                        <div class="grupo-input">
+                            <label for="dorsal-preferido">Dorsal Preferido</label>
+                            <input type="number" id="dorsal-preferido" name="dorsal-preferido" min="1" max="99" placeholder="Ej: 10">
+                        </div>
+                        
+                        <div class="grupo-input">
+                            <label for="experiencia">Años de Experiencia *</label>
+                            <input type="number" id="experiencia" name="experiencia" min="0" max="30" required placeholder="Años jugando">
+                        </div>
+                    </div>
+                    
+                    <div class="grupo-input">
+                        <label for="equipos-anteriores">Equipos Anteriores</label>
+                        <textarea id="equipos-anteriores" name="equipos-anteriores" placeholder="Menciona los equipos en los que has jugado anteriormente"></textarea>
+                    </div>
+                    
+                    <div class="grupo-input">
+                        <label for="motivacion">¿Por qué quieres unirte a Walrus FC? *</label>
+                        <textarea id="motivacion" name="motivacion" rows="4" required placeholder="Cuéntanos tu motivación para formar parte del equipo"></textarea>
+                    </div>
+                </div>
+                
+                <div class="seccion-form">
+                    <h2>Disponibilidad</h2>
+                    
+                    <div class="grupo-input">
+                        <label>Disponibilidad para entrenamientos *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="disponibilidad" value="lunes"> Lunes
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="disponibilidad" value="martes"> Martes
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="disponibilidad" value="miercoles"> Miércoles
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="disponibilidad" value="jueves"> Jueves
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="disponibilidad" value="viernes"> Viernes
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="disponibilidad" value="sabado"> Sábado
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="disponibilidad" value="domingo"> Domingo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grupo-input checkbox-terminos">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terminos" required>
+                        Acepto la <a href="privacidad.html">política de privacidad</a> y los términos del club *
+                    </label>
+                </div>
+                
+                <div class="botones-form">
+                    <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+                    <button type="reset" class="btn-limpiar">Limpiar Formulario</button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div id="redes" class="divfooter">
+                <img src="../CarpetaIMG/red1.png" id="twitter" class="imgRed" alt="">
+                <img src="../CarpetaIMG/red2.png" id="instagram" class="imgRed" alt="">
+                <img src="../CarpetaIMG/red3.png" id="youtube" class="imgRed" alt="">
+                <img src="../CarpetaIMG/red4.png" id="facebook" class="imgRed" alt="">
+                <img src="../CarpetaIMG/red5.png" id="tiktok" class="imgRed" alt="">
+            </div>
+            <hr>
+            <div id="patrocinadores" class="divfooter">
+                <img src="../CarpetaIMG/zentral2.jpg" class="imgPatrocinador" alt="">
+                <img src="../CarpetaIMG/patrocinador1.png" class="imgPatrocinador" alt="">
+                <img src="../CarpetaIMG/patrocinador2.png" class="imgPatrocinador" alt="">
+                <img src="../CarpetaIMG/sponsor.svg" class="imgPatrocinador" alt="">
+                <img src="../CarpetaIMG/nike.webp" class="imgPatrocinador" alt="">
+            </div>
+            <hr>
+            <div id="legalidad" class="divfooter">
+                <div id="politica">
+                    <h6 id="primerh6"><a href="privacidad.html">Politica de Privacidad</a></h6>
+                    <h6><a href="privacidad.html">Aviso Legal</a></h6>                     
+                </div>
+                <img src="../CarpetaIMG/derechos.png" id="derechos" alt="">
+            </div>
+        </footer>
+        <!-- Desde aqui -->
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById("menu-opciones");
+                menu.classList.toggle("activo");
+            }
+        </script>
+        <!-- Hasta aqui es chat gpt-->
+    </body>
+</html>

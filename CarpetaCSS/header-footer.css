@@ -1,0 +1,190 @@
+body{
+    margin: 0 auto;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* header hecho por mi */
+header{
+    background-color: black; 
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    height: 120px;
+}
+#walrus{
+    width: 100px;
+    margin: 20px 20px 20px 60px;
+}
+
+#walrustexto{
+    margin: 0 auto;
+    text-align: center;
+    font: menu;
+    font-size: large;
+    color: white;
+}
+
+/* footer */
+footer{
+    background-color: black;
+}
+
+.divfooter{
+    display: flex;
+    padding: 30px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.imgRed{
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    border-radius: 100%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imgRed:hover {
+    transform: scale(1.2);
+}
+
+#twitter{
+    background-color: #1b9df0;
+}
+
+#instagram{
+    background-color: #fe005c;
+}
+
+#youtube{
+    background-color: #ff0000;
+}
+
+#facebook{
+    background-color: #1877f2;
+}
+
+#tiktok{
+    background-color: #000;
+}
+
+hr{
+    width: 80%;
+    border: none;
+    height: 2px;
+    background-color: #F5D547;
+    opacity: 0.6;
+}
+
+.imgPatrocinador{
+    width: 15%;
+    margin: 10px;
+}
+
+#legalidad{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+h6{
+    color: white;
+}
+
+#politica{
+    display: flex;
+}
+#primerh6{
+    margin-right: 100px;
+}
+#derechos{
+    width: 200px;
+}
+
+/* header hecho por chatgpt */
+
+
+#walrustexto{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #F5D547, #072751, #F5D547);
+    background-size: 200% auto;
+    color: #F5D547;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    letter-spacing: 5px;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% center;
+    }
+    50% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+
+
+/* Contenedor del menú */
+#menu-hamburguesa {
+    margin-left: auto; /* lo empuja a la derecha */
+    position: relative;
+}
+
+/* Icono de hamburguesa */
+#icono-menu {
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    padding: 0 20px;
+}
+
+/* Lista de opciones del menú (invisible por defecto) */
+#menu-opciones {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px; /* ajusta según altura del header */
+    background-color: black;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    min-width: 150px;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilo de cada opción */
+#menu-opciones li {
+    padding: 10px 20px;
+}
+
+#menu-opciones li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover en los enlaces */
+#menu-opciones li a:hover {
+    background-color: #F5D547;
+    color: #072751;
+    border-radius: 5px;
+}
+
+/* Mostrar menú cuando tenga clase activo */
+#menu-opciones.activo {
+    display: block;
+}
